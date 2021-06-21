@@ -38,7 +38,8 @@ const AddJob = () => {
                             <textarea cols='100' rows='5' className="form-control" type="text" onBlur={handleOnBlur} name="Description" placeholder="Job Description" required /><br />
                             <input className="form-control" type="text" onBlur={handleOnBlur} name="Requirements" placeholder="requirements" required /><br />
                             <input className="form-control" type="text" onBlur={handleOnBlur} name="Salary" placeholder="salary" required /><br />
-                            <input type="date" onBlur={handleOnBlur} name="LastDate" required /> <br /><br />
+                            <input className="form-control" type="text" onBlur={handleOnBlur} name="LastDate" placeholder="Last date of application" required /><br />
+                           
                             <button className="btn btn-primary">Add JOb</button>
                         </form>
                     </div>

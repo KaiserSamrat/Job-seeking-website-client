@@ -6,6 +6,7 @@ import AddJob from './Components/AddJob/AddJob'
 import MyJob from './Components/MyJob/MyJob'
 import JobApply from './Components/JobApply/JobApply'
 import EmployeeAccount from './Components/EmployeeAccount/EmployeeAccount'
+import NotFound from './Components/NotFound/NotFound'
 import {
   BrowserRouter as Router,
   Switch,
@@ -46,6 +47,10 @@ function App() {
             <JobApply />
 
           </PrivateRoute>
+          <Route path='*'>
+            <NotFound/>
+
+          </Route>
         </Switch>
       </Router>
 

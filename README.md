@@ -1,6 +1,6 @@
 # Job Seeking Website
 ## Features :
-1. Developed Job Seeking Website by implementing MERN stack where employee will post the job circular and user can apply for the specific job
+1. Developed Job Seeking Website by implementing MERN stack where employee will post the job circular and user can apply for the specific job.
 2. Utilized Google SignIn option for implementing login feature for user and employee. 
 3. User can search the jobs by using the specific keyword.
 4. Admin can update the job list posted by the employee.

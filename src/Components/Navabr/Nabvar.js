@@ -23,8 +23,9 @@ const Nabvar = () => {
                                 <Link to='/addJob' class="nav-link ms-3" href="#footer-area">Employee</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link ms-3" href="#review-area">Admin</a>
+                                <Link to='/admin' class="nav-link ms-3" href="#footer-area">Admin</Link>
                             </li>
+                            
                             <li class="nav-item">
                                 <a class="nav-link ms-3" href="#services-area">User</a>
                             </li>

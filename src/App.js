@@ -12,6 +12,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import AllJobData from './Components/AllJobData/AllJobData'
  ;
 
 function App() {
@@ -37,6 +38,9 @@ function App() {
           </PrivateRoute>
           <PrivateRoute path='/myJobList'>
            <MyJob/>
+          </PrivateRoute>
+          <PrivateRoute path='/admin'>
+           <AllJobData/>
           </PrivateRoute>
           <PrivateRoute path='/applyJob/:id'>
             <JobApply/>

@@ -4,7 +4,7 @@ import JobList from '../JobList/JobList'
 const Home = () => {
     return (
         <div >
-           
+
             <JobList />
 
         </div>

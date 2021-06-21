@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-   ;
-  
+;
+
 const Nabvar = () => {
     return (
         <div>
@@ -25,7 +25,7 @@ const Nabvar = () => {
                             <li class="nav-item">
                                 <Link to='/admin' class="nav-link ms-3" href="#footer-area">Admin</Link>
                             </li>
-                            
+
                             <li class="nav-item">
                                 <a class="nav-link ms-3" href="#services-area">User</a>
                             </li>

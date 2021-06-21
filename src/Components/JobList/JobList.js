@@ -32,7 +32,7 @@ const JobList = () => {
             <h4 className='text-center mt-3 search-option'>Search your dream Job by title !!</h4>
             <form className='container'>
                 <input type="text" onChange={handleSearch} placeholder='search' className='form-control m-auto mt-3 w-50' />
-              
+
             </form>
 
             {

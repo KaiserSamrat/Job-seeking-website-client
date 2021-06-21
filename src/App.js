@@ -13,42 +13,42 @@ import {
   Link
 } from "react-router-dom";
 import AllJobData from './Components/AllJobData/AllJobData'
- ;
+  ;
 
 function App() {
   return (
     <div >
       <Router>
-        <Navbar/>
+        <Navbar />
         <Switch>
-        <Route exact path ='/'>
+          <Route exact path='/'>
             <Home></Home>
           </Route>
-          <Route path ='/home'>
+          <Route path='/home'>
             <Home></Home>
           </Route>
           <Route path='/login'>
             <Login></Login>
           </Route>
           <PrivateRoute path='/addJob'>
-          <AddJob></AddJob>
+            <AddJob></AddJob>
           </PrivateRoute>
           <PrivateRoute path='/employeeAccount'>
-          <EmployeeAccount/>
+            <EmployeeAccount />
           </PrivateRoute>
           <PrivateRoute path='/myJobList'>
-           <MyJob/>
+            <MyJob />
           </PrivateRoute>
           <PrivateRoute path='/admin'>
-           <AllJobData/>
+            <AllJobData />
           </PrivateRoute>
           <PrivateRoute path='/applyJob/:id'>
-            <JobApply/>
-         
+            <JobApply />
+
           </PrivateRoute>
         </Switch>
       </Router>
-     
+
     </div>
   );
 }

@@ -26,10 +26,10 @@ const AddJob = () => {
 
     return (
         <div>
-           <div className="container">
+            <div className="container">
                 <div className="row">
                     <div className="col-md-4">
-                        
+
                     </div>
                     <div className="col-md-8">
                         <h3>Add new Job</h3>
@@ -42,7 +42,7 @@ const AddJob = () => {
                             <button className="btn btn-primary">Add JOb</button>
                         </form>
                     </div>
-                   
+
                 </div>
             </div>
         </div>

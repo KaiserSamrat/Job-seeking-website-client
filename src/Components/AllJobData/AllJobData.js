@@ -12,20 +12,20 @@ const AllJobData = () => {
         <div className='container'>
             <table className="table">
                 <thead>
-                            <tr>
-                                <th>Employee Name</th>
-                                <th>Email</th>
-                                <th>Title</th>
-                                <th>Requirements</th>
-                                <th>Salray</th>
-                            </tr>
-                        </thead>
-                    <tbody>
-                        {
-                            jobData.map(job=><SingleJobdata job={job}></SingleJobdata>)
-                        }
-                    </tbody>
-                </table>
+                    <tr>
+                        <th>Employee Name</th>
+                        <th>Email</th>
+                        <th>Title</th>
+                        <th>Requirements</th>
+                        <th>Salray</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        jobData.map(job => <SingleJobdata job={job}></SingleJobdata>)
+                    }
+                </tbody>
+            </table>
         </div>
     );
 };

@@ -15,17 +15,28 @@ const JobList = () => {
     //     .then(data=>console.log(data))
     // }
     const [jobList, setJobList] = useState([]);
-    useEffect(()=>{
-        fetch('http://localhost:4000/joblist')
-        .then(res=>res.json())
-        .then(data=>setJobList(data))
-    })
+    const [search, setSearch] = useState('');
+    useEffect(() => {
+
+        fetch('http://localhost:4000/joblist?search=' + search)
+            .then(res => res.json())
+            .then(data => setJobList(data))
+    }, [search])
+
+    const handleSearch = event => {
+        setSearch(event.target.value)
+    }
+
     return (
         <div className='container'>
-            
-           {
-               jobList.slice(0,20).map(jobList => <JobDetails jobList={jobList}></JobDetails>)
-           }
+            <form className='container'>
+                <input type="text" onChange={handleSearch} placeholder='search' className='form-control m-auto mt-5 w-50' />
+              
+            </form>
+
+            {
+                jobList.slice(0, 20).map(jobList => <JobDetails jobList={jobList}></JobDetails>)
+            }
         </div>
     );
 };

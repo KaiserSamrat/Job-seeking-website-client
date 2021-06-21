@@ -17,7 +17,10 @@ const Nabvar = () => {
                                 <Link class="nav-link active" aria-current="page" to="/">Home</Link>
                             </li>
                             <li class="nav-item">
-                                <Link to='/addJob' class="nav-link ms-3" href="#footer-area">Employer</Link>
+                                <Link to='/employeeAccount' class="nav-link ms-3" href="#footer-area">Buy</Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link to='/addJob' class="nav-link ms-3" href="#footer-area">Employee</Link>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link ms-3" href="#review-area">Admin</a>

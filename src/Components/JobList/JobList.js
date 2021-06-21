@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import FakeData from '../FakeData/Fakedata.json'
 import JobDetails from '../JobDetails/JobDetails'
+import './JobList.css'
 
 
 const JobList = () => {
@@ -29,8 +29,9 @@ const JobList = () => {
 
     return (
         <div className='container'>
+            <h4 className='text-center mt-3 search-option'>Search your dream Job by title !!</h4>
             <form className='container'>
-                <input type="text" onChange={handleSearch} placeholder='search' className='form-control m-auto mt-5 w-50' />
+                <input type="text" onChange={handleSearch} placeholder='search' className='form-control m-auto mt-3 w-50' />
               
             </form>
 

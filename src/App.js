@@ -5,6 +5,7 @@ import PrivateRoute from './Components/PrivateRoute/PrivateRoute'
 import AddJob from './Components/AddJob/AddJob'
 import MyJob from './Components/MyJob/MyJob'
 import JobApply from './Components/JobApply/JobApply'
+import EmployeeAccount from './Components/EmployeeAccount/EmployeeAccount'
 import {
   BrowserRouter as Router,
   Switch,
@@ -30,6 +31,9 @@ function App() {
           </Route>
           <PrivateRoute path='/addJob'>
           <AddJob></AddJob>
+          </PrivateRoute>
+          <PrivateRoute path='/employeeAccount'>
+          <EmployeeAccount/>
           </PrivateRoute>
           <PrivateRoute path='/myJobList'>
            <MyJob/>

@@ -6,6 +6,7 @@ import AddJob from './Components/AddJob/AddJob'
 import MyJob from './Components/MyJob/MyJob'
 import JobApply from './Components/JobApply/JobApply'
 import EmployeeAccount from './Components/EmployeeAccount/EmployeeAccount'
+import ProcessPayment from './Components/ProcessPayment/ProcessPayment'
 import NotFound from './Components/NotFound/NotFound'
 import {
   BrowserRouter as Router,
@@ -45,6 +46,10 @@ function App() {
           </PrivateRoute>
           <PrivateRoute path='/applyJob/:id'>
             <JobApply />
+
+          </PrivateRoute>
+          <PrivateRoute path='/processPayment'>
+           <ProcessPayment/>
 
           </PrivateRoute>
           <Route path='*'>

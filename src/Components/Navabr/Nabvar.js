@@ -27,10 +27,9 @@ const Nabvar = () => {
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link ms-3" href="#services-area">User</a>
+                                <Link to='/myJobList' class="nav-link ms-3" href="#services-area">User</Link>
                             </li>
-                            <button className='btn btn-success me-3'>DashBoard</button>
-                            <button className='btn btn-info me-3'>Login</button>
+
 
 
 

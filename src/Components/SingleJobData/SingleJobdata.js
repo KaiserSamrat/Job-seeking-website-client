@@ -5,7 +5,7 @@ const SingleJobdata = (props) => {
     const { _id, title, Requirements, Salary, LastDate, Description } = props.job;
     const history = useHistory();
     const handleDelete = () => {
-        fetch(`http://localhost:4000/deleteJob/${_id}`, {
+        fetch(`https://stark-cliffs-75141.herokuapp.com/deleteJob/${_id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())

@@ -22,7 +22,7 @@ const JobApply = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (jobData.LinkedinProfile) {
-            fetch(`http://localhost:4000/applyJob`, {
+            fetch(`https://stark-cliffs-75141.herokuapp.com/applyJob`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(jobData)
@@ -40,7 +40,7 @@ const JobApply = () => {
     }
 
     useEffect(() => {
-        fetch(`http://localhost:4000/job/${id}`)
+        fetch(`https://stark-cliffs-75141.herokuapp.com/job/${id}`)
             .then(res => res.json())
             .then(data => {
                 setJobInfo(data);

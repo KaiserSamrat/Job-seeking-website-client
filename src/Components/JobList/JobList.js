@@ -5,7 +5,7 @@ import './JobList.css'
 
 const JobList = () => {
     // const addAllJob = ()=>{
-    //     fetch('http://localhost:4000/addJob',{
+    //     fetch('https://stark-cliffs-75141.herokuapp.com/addJob',{
     //         method: 'POST',
     //         headers: { 'Content-Type': 'application/json' },
     //         body: JSON.stringify(FakeData)
@@ -18,7 +18,7 @@ const JobList = () => {
     const [search, setSearch] = useState('');
     useEffect(() => {
 
-        fetch('http://localhost:4000/joblist?search=' + search)
+        fetch('https://stark-cliffs-75141.herokuapp.com/joblist?search=' + search)
             .then(res => res.json())
             .then(data => setJobList(data))
     }, [search])

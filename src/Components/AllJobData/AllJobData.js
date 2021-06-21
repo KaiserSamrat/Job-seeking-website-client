@@ -4,7 +4,7 @@ import SingleJobdata from '../SingleJobData/SingleJobdata'
 const AllJobData = () => {
     const [jobData, setJobData] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:4000/allJOb`)
+        fetch(`https://stark-cliffs-75141.herokuapp.com/allJOb`)
             .then(res => res.json())
             .then(data => setJobData(data))
     }, [])

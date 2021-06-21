@@ -7,7 +7,7 @@ const MyJob = () => {
     console.log(myJobs);
 
     useEffect(() => {
-        fetch(`http://localhost:4000/myJobList/${user.email}`)
+        fetch(`https://stark-cliffs-75141.herokuapp.com/myJobList/${user.email}`)
             .then(res => res.json())
             .then(data => setMyJobs(data))
     }, [])

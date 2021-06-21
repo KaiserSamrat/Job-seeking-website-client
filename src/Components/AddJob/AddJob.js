@@ -6,7 +6,7 @@ const AddJob = () => {
     const history = useHistory();
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch('http://localhost:4000/addjob', {
+        fetch('https://stark-cliffs-75141.herokuapp.com/addjob', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(job)
